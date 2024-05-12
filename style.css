@@ -150,9 +150,26 @@ color: hsl(237, 63%, 64%);
 color: hsl(0, 0%, 100%);
 }
 
-.price-annually{
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+}
+
+.flex p{
+  color: hsl(232, 13%, 33%);
+}
+
+.hide-price{
   display: none;
 }
+
+.price-annualy{
+  display: none;
+}
+
 
 .btn{
   width: 100%;
@@ -172,13 +189,21 @@ color: hsl(0, 0%, 100%);
   body{
     display: grid;
     place-content: center;
-    min-width: 100vh;
+    min-height: 100vh;
   }
 
   .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .card-2{
+    margin: -.6rem 0 1rem 0;
+  }
+
+ .card-1,.card-2,.card-3{
+  min-width: 250px;
+ }
 
   .cards > *{
     padding: 1.5rem;
