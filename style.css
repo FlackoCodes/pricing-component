@@ -55,7 +55,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 1rem;
-margin-bottom: 20px;
+margin-bottom: 30px;
 }
 
 .switch {
@@ -115,11 +115,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-
-li{
-  list-style-type: none;
 }
 
 .card-1,.card-2,.card-3{
@@ -185,6 +180,20 @@ color: hsl(0, 0%, 100%);
   text-transform: uppercase;
 }
 
+.card-1 .btn:hover, .card-3 .btn:hover{
+  background: hsl(0, 0%, 100%);
+  color: hsl(237, 63%, 64%);
+  border: .8px solid hsl(236, 72%, 79%);
+  transition: all ease 1s;
+}
+
+.card-2 .btn:hover{
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(0, 0%, 100%);
+  border: .8px solid hsl(236, 72%, 79%);
+
+}
+
 @media screen and (min-width: 768px) {
   body{
     display: grid;
@@ -210,3 +219,4 @@ color: hsl(0, 0%, 100%);
   }
   
 }
+

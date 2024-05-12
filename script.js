@@ -3,8 +3,6 @@ const toggleButton = document.querySelector('.check-box');
 const prices = document.querySelectorAll('.price-monthly');
 
 
-
-
 function convertedPrice(priceElement, conversionFactor) {
     const priceNumber = Number(priceElement.innerText);
     const convertedPrice = (priceNumber * conversionFactor).toFixed(2);
